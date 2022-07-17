@@ -724,7 +724,7 @@ function StudentAdaptiveTestXBlock(runtime, element) {
 
     /* 
      * Functions inherited from last team (Kolb team at 2018). Contact for support.
-     * These functions act as a scrapper for sortables input.
+     * These functions act as a scrapper for sortables input. ddddddd
      */
     function getTestKolbResults() {
         columns = getAnswersFromForm();

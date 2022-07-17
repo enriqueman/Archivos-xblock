@@ -538,7 +538,7 @@ function StudentAdaptiveTestXBlock(runtime, element) {
 
             }
 
-            //strQuadrant = {'result':`auditivo: ${auditivoResult.length*100/40}%`};
+            //strQuadrant = {'result':`auditivo: ${auditivoResult.length*100/40}%`}; dddddddd
             responseTestBG = { 'result': strQuadrant };
             return responseTestBG;
         }
