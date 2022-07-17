@@ -15,7 +15,7 @@ function StudioAnalyticsXBlock(runtime, element) {
           //add a header to the web page
           var header = "";
           header =
-            '<div class="bg-primary  d-flex justify-content-center"> <h2 class="h1 text-white">Resultados Tests</h2> </div>';
+            '<div class="bg-primary  d-flex justify-content-center"> <h2 class="h1 text-white">Resultados Tests Herrmann V2</h2> </div>';
           $("#analytics-header").append(header);
           //show database results (student id, date, test name and test result) in an HTML table
           data.map((student) => {
@@ -57,19 +57,15 @@ function StudioAnalyticsXBlock(runtime, element) {
   
             a = 0, k = 0, v = 0, av = 0, ka = 0, vk = 0;
             for (var i = 0; i < res.length; i++) {
-              if (res[i].substr(0, 28) == "Dominante Visual-Kinestésico") {
+              
+              if (res[i].substr(1, 29) == "Cuadrante predominante A (lógico-matemático)") {
                 vk++;
-              } else if (res[i].substr(0, 30) == "Dominante Auditivo-Kinestésico") {
+              } else if (res[i].substr(30, 58) == "Cuadrante predominante B (organizado- analista)") {
                 ka++;
-              } else if (res[i].substr(0, 25) == "Dominante Visual-Auditivo") {
+              } else if (res[i].substr(59, 87) == "Cuadrante predominante C (emocional-sensitivo)") {
                 av++;
-              } else if (res[i].substr(0, 18) == "Dominante Auditivo") {
+              } else if (res[i].substr(88, 116) == "Cuadrante predominante D (intuitivo-imaginativo)") {
                 a++;
-              } else if (res[i].substr(0, 21) == "Dominante Kinestésico") {
-                k++;
-              }
-              else {
-                v++;
               }
             }
           });
@@ -78,12 +74,12 @@ function StudioAnalyticsXBlock(runtime, element) {
             type: "pie",
             data: {
               datasets: [{
-                  data: [v, a, k, av, ka, vk],
+                  data: [a, av, ka, vk],
                   backgroundColor: [
-                      "#9870bc", "#0870bc", "#74bcff", "#0e2f57", "#19ebff", "#60111a",
+                      "#0870bc", "#0e2f57", "#19ebff", "#60111a",
                       ],
                 }],
-              labels: [v + " Visual", a + " Auditivo", k + " Kinestésico", av + " Visual-Auditivo", ka + " Kinestésico-Auditivo", vk + " Visual-Kinestésico",
+              labels: [a + "Intuitivo-Imaginativo", av + " Emocional-Sensitivo", ka + " Organizado-Analista", vk + " Lógico-Matemático"
               ]
               
                },
@@ -100,14 +96,14 @@ function StudioAnalyticsXBlock(runtime, element) {
             type: "bar",
             data: {
               datasets: [{
-                  data: [v, a, k, av, ka, vk],
+                  data: [a, av, ka, vk],
                   backgroundColor: [
-                      "#9870bc", "#0870bc", "#74bcff", "#0e2f57", "#19ebff", "#60111a",
+                      "#0870bc", "#0e2f57", "#19ebff", "#60111a",
                   ],
                 }],
   
               labels: [
-               v+ " Visual" , a+" Auditivo", k+ " Kinestésico", av+ " Auditivo-Visual", ka+ " Kinestésico-Auditivo", vk+ " Visual-Kinestésico"
+               a + "Intuitivo-Imaginativo", av + " Emocional-Sensitivo", ka + " Organizado-Analista", vk + " Lógico-Matemático"
               ]
               
             },
