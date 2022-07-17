@@ -1,3 +1,412 @@
+
+const Herrmann_v2= '<div id="testContainer" class="card d-flex justify-content-center">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Test de dominancia cerebral de Herrmann</title>
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="myxblock.css">
+    </head>
+
+    <body>
+        <h1 id="rcorners1">Test de dominancia cerebral de Herrmann</h1>
+        <div class="titles">Instrucciones</div><br>
+        <p>Elije una opcion con la que más te identificas de cada una de las preguntas:</p><br>
+        <form>
+            <div class="pregresp">
+                <h4>1. Cuando estudio o hago los deberes: </h4><br>
+                <input type="radio" name="N1" value="a"> Necesito que haya alguien cerca de mí como mi madre,mi padre,
+                un compañero o compañera: a menudo les hago preguntas o les pido ayuda.<br>
+                <input type="radio" name="N1" value="b"> Trabajo siempre en el mismo sitio y a la misma hora si puede
+                ser, no me gustan las improvisaciones y hago todo lo que me mandan.<br>
+                <input type="radio" name="N1" value="c"> Hago los deberes y aprendo las lecciones de forma relajada, no
+                suelo estresarme.<br>
+                <input type="radio" name="N1" value="d"> Trabajo solo y bastante deprisa, sé exactamente cómo hacer lo
+                que me han asignado; me concentro y no dejo que nada me distraiga antes de terminar. <br>
+            </div>
+            <div class="pregresp">
+                <h4>2. Con los profesores:</h4><br>
+                <input type="radio" name="N2" value="a"> Prefiero a los profesores que conocen bien su materia y hacen
+                sus clases muy intensas.<br>
+                <input type="radio" name="N2" value="b"> Trabajo mejor con los profesores que me resultan
+                simpáticos.<br>
+                <input type="radio" name="N2" value="c"> Prefiero a los profesores que saben llevar su clase, incluso si
+                me intimidan y me dan miedo.<br>
+                <input type="radio" name="N2" value="d"> Me gustan los profesores fantasiosos e inventivos, los que
+                hacen que la clase sea algo fuera de lo común. <br>
+            </div>
+            <div class="pregresp">
+                <h4>3. En cuanto al temario o programa de una asignatura::</h4><br>
+                <input type="radio" name="N3" value="a"> Siempre me ha gustado saber que terminamos el programa. Es
+                importante para estar en buenas condiciones al comenzar el curso siguiente.<br>
+                <input type="radio" name="N3" value="b"> Prefiero a los profesores que dan por escrito el plan detallado
+                del curso. De este modo puedo planificarme correctamente y saber hacia dónde voy.<br>
+                <input type="radio" name="N3" value="c"> No me gustan los profesores que rechazan una discusión
+                interesante para poder terminar la lección. Creo que es necesario saber dar a las clases un ambiente
+                relajado.<br>
+                <input type="radio" name="N3" value="d"> Me gustan mucho los profesores que actúan como si no hubiese
+                programa, hablan de temas apasionantes y se detienen en ellos mucho tiempo.<br>
+            </div>
+            <div class="pregresp">
+                <h4>4. En cuanto al funcionamiento interno de la escuela:</h4><br>
+                <input type="radio" name="N4" value="a"> Me gustaría que no hubiera profesores, porque en la escuela me
+                gusta hablar y relacionarme con mis compañeros, pero hay que estar callado y trabajar.<br>
+                <input type="radio" name="N4" value="b"> No me gustan nada las normas, hay que obedecer a los timbres o
+                a la campana, llegar a una hora, hacer deberes, estudiar.<br>
+                <input type="radio" name="N4" value="c"> Creo que la escuela es importante, aunque a veces tenga deberes
+                o tareas que no me agradan, las hago. Por eso no me gusta que los profesores se ausenten o que sean
+                incapaces de hacer callar a los que nos impiden trabajar.<br>
+                <input type="radio" name="N4" value="d"> Me gusta la escuela y creo que es útil para llegar a ser algo
+                en la vida. Lamento que no todos los profesores sean capaces de hacernos progresar con suficiente
+                rapidez.<br>
+            </div>
+            <div class="pregresp">
+                <h4>5. Cuando tengo un examen:</h4><br>
+                <input type="radio" name="N5" value="a"> Cuando sé que va a haber un examen preparo bien mi material,
+                hojas, estuche, etc. Me preocupo principalmente de presentar bien mi trabajo, pues sé que los profesores
+                le dan mucha importancia.<br>
+                <input type="radio" name="N5" value="b"> A veces tengo malas notas en los exámenes, porque leo muy
+                deprisa el enunciado, me salgo del tema o no aplico el método adecuado. Soy distraído e
+                independiente.<br>
+                <input type="radio" name="N5" value="c"> Estudio los temas a fondo. Cuando hago el examen analizo bien
+                en primer lugar el enunciado y hago un plan claro y lógico.<br>
+                <input type="radio" name="N2" value="d"> No me gusta encontrarme solo ante mi hoja. Me cuesta trabajo
+                concentrarme, si puedo intento atraer al profesor, le pregunto cosas, miro a mis compañeros y les pido
+                que me digan la respuesta.<br>
+            </div>
+            <div class="pregresp">
+                <h4>6. Si tenemos que hacer un trabajo en grupo:</h4><br>
+                <input type="radio" name="N6" value="a"> No me gusta el trabajo en grupo, hay que seguir las
+                instrucciones y respetar las opiniones de los compañeros. Muchas veces no consigo hacer valer mis ideas,
+                tengo que seguir la ley del grupo.<br>
+                <input type="radio" name="N6" value="b"> El trabajo en grupo casi nunca es eficaz, siempre hay
+                compañeros que se aprovechan de él para no hacer nada o hablar de otra cosa: no se puede trabajar
+                seriamente.<br>
+                <input type="radio" name="N6" value="c"> Disfruto realizando trabajos en grupo, hablo con mis
+                compañeros, podemos discutir, divertirnos.<br>
+                <input type="radio" name="N6" value="d"> El trabajo en grupo es eficaz si está bien planeado, pero es
+                necesario que las instrucciones sean muy claras y que el profesor imponga unas normas claras.<br>
+            </div>
+            <div class="pregresp">
+                <h4>7. Sobre la escuela piensas que es: </h4><br>
+                <input type="radio" name="N7" value="a"> Práctica, nos enseña a vivir en sociedad, a comunicarnos y a
+                trabajar en grupo. Es útil para adaptarse a la vida.<br>
+                <input type="radio" name="N7" value="b"> Indispensable para triunfar y adquirir conocimientos esenciales
+                para ejercer una profesión.<br>
+                <input type="radio" name="N7" value="c"> Necesaria porque se aprenden métodos y reglas que después son
+                útiles para organizarse en la vida. <br>
+                <input type="radio" name="N7" value="d"> Se encuentran ideas y pistas para soñar e imaginar. Esto da
+                ganas de saber más, de leer e investigar, de viajar: aunque no de trabajar para tener una profesión.<br>
+            </div>
+            <div class="pregresp">
+                <h4>8. Para aprender idiomas:</h4><br>
+                <input type="radio" name="N8" value="a"> No me cuesta aprender el vocabulario de memoria, pero mis
+                resultados son medianos porque me cuesta trabajo construir frases y no tengo buen acento.<br>
+                <input type="radio" name="N8" value="b"> Soy bastante bueno para los idiomas, me gusta hablar e
+                intercambiar opiniones. Por escrito soy menos bueno.<br>
+                <input type="radio" name="N8" value="c"> Retengo con facilidad las expresiones típicas y tengo bastante
+                buen acento. Cuando no encuentro la palabra exacta me las arreglo para salir del paso.<br>
+                <input type="radio" name="N8" value="d"> Conozco las reglas gramaticales y soy bueno cuando escribo,
+                pero tengo menos facilidad de expresarme al hablar.<br>
+            </div>
+            <div class="pregresp">
+                <h4>9. Mis materias de estudio preferidas son:</h4><br>
+                <input type="radio" name="N9" value="a"> No tengo materias preferidas, me gusta todo lo que permite
+                imaginar o crear. Me intereso por la lección cuando trata de algo nuevo o poco habitual.<br>
+                <input type="radio" name="N9" value="b"> Matemáticas, física o informática.<br>
+                <input type="radio" name="N9" value="c"> La historia es una de mis materias preferidas, me gusta también
+                la biología.<br>
+                <input type="radio" name="N9" value="d"> Las de lengua e idiomas, también sociales.<br>
+            </div>
+            <div class="pregresp">
+                <h4>10. En cuanto a la lectura:</h4><br>
+                <input type="radio" name="N10" value="a"> No me gusta leer y por eso no leo casi nunca, salvo los libros
+                que me aconsejan o imponen los profesores.<br>
+                <input type="radio" name="N10" value="b"> Me gusta mucho leer, leo incluso las introducciones y las
+                notas al pie de página. No me gusta dejar un libro cuando he comenzado a leerlo y lo termino siempre,
+                incluso cuando me parece aburrido.<br>
+                <input type="radio" name="N10" value="c"> Leo muchas novelas, me gustan las historias emocionantes y que
+                me hacen soñar. No me importa que me aconsejen libros, los busco y los prefiero a los otros.<br>
+                <input type="radio" name="N10" value="d"> Prefiero leer relatos de aventuras o de ficción, cuanto más
+                extraordinarias son las historias, más me gustan.<br>
+            </div>
+            <div class="pregresp">
+                <h4>11. Sobre las preguntas orales:</h4><br>
+                <input type="radio" name="N11" value="a"> Me da miedo que me hagan este tipo de preguntas, me cuesta
+                trabajo concentrar mis ideas cuando me mira todo el mundo.<br>
+                <input type="radio" name="N11" value="b"> Me gusta que me pregunten cuando puedo elegir el momento
+                levantando la mano, a veces soy capaz de encontrar fácilmente la solución de problemas complicados pero
+                no veo la solución de otros más sencillos.<br>
+                <input type="radio" name="N11" value="c"> Estoy a gusto cuando realizo estas pruebas, pero no me gustan
+                los profesores que califican las preguntas orales, porque los que más saben “chivan” a los que saben
+                menos y así todo resulta falso.<br>
+                <input type="radio" name="N11" value="d"> Cuando he de hablar delante de todos me las arreglo para que
+                los demás se rían, y provocar así la benevolencia del profesor. Pero esto no resulta siempre y no
+                consigo disimular durante mucho tiempo mis dificultades.<br>
+            </div>
+            <div class="pregresp">
+                <h4>12. En cuanto a las calificaciones o notas:</h4><br>
+                <input type="radio" name="N12" value="a"> Cuando he realizado un examen, trato de saber mi nota lo antes
+                posible. Le pregunto al profesor si lo he hecho bien y qué nota he tenido, y si puedo, le pido que me
+                ponga un poco más.<br>
+                <input type="radio" name="N12" value="b"> Le doy mucha importancia a las notas, si tengo la ocasión,
+                pregunto por el criterio que se va a aplicar antes de comenzar mis exámenes. Guardo mis notas
+                ordenadamente.<br>
+                <input type="radio" name="N12" value="c"> No guardo o apunto mis notas, conozco más o menos mi nivel y
+                cuando lo necesito pido mis notas a los profesores para sacar el promedio.<br>
+                <input type="radio" name="N12" value="c"> Guardo todos mis exámenes calificados, además compruebo los
+                resultados y promedios porque he observado que muchos profesores se olvidan de los medios puntos y los
+                cuartos de punto.<br>
+            </div>
+            <div class="pregresp">
+                <h4>13. Se me da mejor:</h4><br>
+                <input type="radio" name="N13" value="a"> Manejar aspectos creativos.<br>
+                <input type="radio" name="N13" value="b"> Manejar relaciones interpersonales.<br>
+                <input type="radio" name="N13" value="c"> Resolver problemas lógicos.<br>
+                <input type="radio" name="N13" value="d"> Manejar aspectos financieros.<br>
+            </div>
+            <div class="pregresp">
+                <h4>14. Las profesiones o estudios que más me atraen son:</h4><br>
+                <input type="radio" name="N14" value="a"> Económicas, empresariales, administración de empresas.<br>
+                <input type="radio" name="N14" value="b"> Periodismo, psicología, pedagogía.<br>
+                <input type="radio" name="N14" value="c"> Ingeniería, matemáticas, física, química.<br>
+                <input type="radio" name="N14" value="d"> Arquitectura, música, bellas artes.<br>
+            </div>
+            <div class="pregresp">
+                <h4>15. Cuando un buen amigo, pareja o familiar acude a mí porque tiene un problema:</h4><br>
+                <input type="radio" name="N15" value="a"> No me preocupo si el problema no es considerablemente
+                grave.<br>
+                <input type="radio" name="N15" value="b"> Le escribo una lista con las posibles soluciones.<br>
+                <input type="radio" name="N15" value="c"> Abrazo a esa persona y lo siento mucho por ella.<br>
+                <input type="radio" name="N15" value="d"> Me invento un plan para ayudarla.<br>
+            </div>
+            <div class="pregresp">
+                <h4>16. En el momento de estudiar antes de hacer un examen:</h4><br>
+                <input type="radio" name="N16" value="a"> Disfruto mucho haciendo ejercicios para prepararme el
+                examen.<br>
+                <input type="radio" name="N16" value="b"> Elaboró un plan de estudio, compaginando descanso con horas de
+                concentración. <br>
+                <input type="radio" name="N16" value="c"> Me pongo muy nervioso/a y siento mucha ansiedad, sobre todo el
+                día antes.<br>
+                <input type="radio" name="N16" value="d"> Busco apuntes divertidos, hago dibujos para acordarme y
+                elaboró técnicas para recordar nombres y fechas.<br>
+            </div>
+            <div class="pregresp">
+                <h4>17.En una pareja lo que busco es:</h4><br>
+                <input type="radio" name="N17" value="a"> Una persona con la que compartir conocimientos y
+                sabiduría.<br>
+                <input type="radio" name="N17" value="b"> Busco a alguien compatible con mi personalidad, agradable y
+                que yo considere atractivo/a.<br>
+                <input type="radio" name="N17" value="c"> Amor y pasión, me gusta sentir muchas emociones en mi relación
+                de pareja.<br>
+                <input type="radio" name="N17" value="d"> Alguien con quien compartir aventuras y nuevas
+                experiencias.<br>
+            </div>
+            <div class="pregresp">
+                <h4>18. Cuando tengo una discusión familiar: </h4><br>
+                <input type="radio" name="N18" value="a"> No me involucro demasiado, solamente observo cómo se comportan
+                los demás.<br>
+                <input type="radio" name="N18" value="b"> Analizo cómo se porta cada miembro de la familia e intento
+                actuar en consecuencia.<br>
+                <input type="radio" name="N18" value="c"> Me pongo a llorar, no soporto ver como mi familia se pelea,
+                son personas que quiero mucho.<br>
+                <input type="radio" name="N18" value="d"> Busco la mejor manera de calmar el ambiente y me invento
+                alguna dinámica o juego si hace falta.<br>
+            </div>
+            <div class="pregresp">
+                <h4>19. Cuando tengo un presentimiento o una corazonada:</h4><br>
+                <input type="radio" name="N19" value="a"> No suelo tener ese tipo de sensaciones.<br>
+                <input type="radio" name="N19" value="b"> Pienso por qué lo siento e intento buscar la explicación más
+                razonable de dicho presentimiento.<br>
+                <input type="radio" name="N19" value="c"> Me alegro mucho, me encanta sentir cómo mi mente me intenta
+                decir algo.<br>
+                <input type="radio" name="N19" value="d"> Sigo esa corazonada, no suelo equivocarme nunca.<br>
+            </div>
+            <div class="pregresp">
+                <h4>20. Personalidad que me caracteriza:</h4><br>
+                <input type="radio" name="N20" value="a"> Me encuentro a mi mismo preferentemente cerebral y me gusta
+                encontrar una explicación lógica a las cosas.<br>
+                <input type="radio" name="N20" value="b"> Soy muy imaginativo ¡ vivo lleno de ideas!<br>
+                <input type="radio" name="N20" value="c"> No hago amistades con facilidad, pero en cambio soy fiel a los
+                amigos<br>
+                <input type="radio" name="N20" value="d"> Tengo facilidad de contacto, me gusta la gente y me dirijo a
+                ellas con soltura.<br>
+            </div>
+            <div class="pregresp">
+                <h4>21. Relación con mis liderados o mentorizados a cargo: </h4><br>
+                <input type="radio" name="N21" value="a"> Ignoro las primeras impresiones que se plantean en un
+                encuentro en busca de pruebas, aplicar tests para conocer el nivel previo y asistirlos a progresar.<br>
+                <input type="radio" name="N21" value="b"> Tomo control de la situación y acostumbro a las personas a
+                seguir un método sabiendo lo que tienen que hacer y así yo no tengo problemas.<br>
+                <input type="radio" name="N21" value="c"> Doy prioridad a la relación con todos los mentorizados; lo
+                esencial es que ellos se sientan bien, así ,la pasan mejor.<br>
+                <input type="radio" name="N21" value="d"> A veces me falta estructura, pero mi punto fuerte es mi
+                capacidad para hacerles entender las cosas más difíciles a través de imágenes, historias o juegos de
+                palabras.<br>
+            </div>
+            <div class="pregresp">
+                <h4>22. Relación con mis colegas o pares:</h4><br>
+                <input type="radio" name="N22" value="a"> Doy prioridad al trabajo en equipo, para mi es una necesidad
+                psicológica.<br>
+                <input type="radio" name="N22" value="b"> Creo que es necesario establecer una coordinación en el equipo
+                que participó. trabajo con algunos compañeros cuya puntualidad y organización aprecio.<br>
+                <input type="radio" name="N22" value="c"> Prefiero no trabajar en grupo.creo que me disperso y que el
+                trabajo en grupo es más superficial.<br>
+                <input type="radio" name="N22" value="d"> Cuando trabajo con mis colegas, les sorprendo a mi lado
+                imprevisible y fantasioso.<br>
+            </div>
+            <div class="pregresp">
+                <h4>23. Preparación de los encuentros:</h4><br>
+                <input type="radio" name="N23" value="a"> En general, me gusta preparar los encuentros que lideró sobre
+                temas distintos o secundarios para entretenerme.<br>
+                <input type="radio" name="N23" value="b"> En los encuentros que lideró reservo una parte importante a la
+                improvisación.<br>
+                <input type="radio" name="N23" value="c"> Trabajo mucho más preparando cada encuentro que ofreciéndo;
+                previamente preparó procesos precisos y asignar tiempos, y así los participantes ejecutan con más
+                orden.<br>
+                <input type="radio" name="N23" value="d"> Antes de elaborar el material de un encuentro tengo la
+                necesidad de preparar un plan de lo que va a suceder.<br>
+            </div>
+            <div class="pregresp">
+                <h4>24. Desarrollo del programa:</h4><br>
+                <input type="radio" name="N24" value="a"> Para mi, los programas constituyen un fastidio. trato las
+                grandes líneas y los puntos esenciales.<br>
+                <input type="radio" name="N24" value="b"> La forma de avanzar en un programa depende sobre todo de los
+                tiempos de los participantes; si es necesario para ellos voy más lento.<br>
+                <input type="radio" name="N24" value="c"> A la vuelta de las vacaciones elaboró los planes para el nuevo
+                año; en caso de que surjan imprevistos, trato rápidamente algunos puntos pero siempre hay un
+                programa.<br>
+                <input type="radio" name="N24" value="d"> Cada año se construyó un esquema preciso para abordar las
+                metas y objetivos acordados.<br>
+            </div>
+            <div class="pregresp">
+                <h4>25. Gestión de los contenidos:</h4><br>
+                <input type="radio" name="N25" value="a"> Tengo tendencia a multiplicar las indicaciones y las
+                precisiones sobre las preguntas para dar pistas a los mentorizados.<br>
+                <input type="radio" name="N25" value="b"> Pregunto solamente cuestiones globales y me doy cuenta de que
+                a veces resultan vagas para mis mentorizados.<br>
+                <input type="radio" name="N25" value="c"> Preciso y acertado a la hora de redactar consignas en un
+                tiempo precisado, común para todos; considero que hay modelos de presentación que deben ser
+                respetados.<br>
+                <input type="radio" name="N25" value="d"> Procuro equilibrar la teoría y la práctica.Insisto en la
+                adquisición de los conocimientos.<br>
+            </div>
+            <div class="pregresp">
+                <h4>26. Evaluación del aprendizaje:</h4><br>
+                <input type="radio" name="N26" value="a"> Doy mucha importancia al contenido.No aprecio el estilo difuso
+                ni la extrema concisión que oculta las lagunas.<br>
+                <input type="radio" name="N26" value="b"> La presentación, la letra y el respeto a las instrucciones son
+                de suma importancia para mi.<br>
+                <input type="radio" name="N26" value="c"> Doy preferencia a las ideas originales, me gustan los
+                desarrollos poco habituales y en general todo lo que se sale de lo corriente.<br>
+                <input type="radio" name="N26" value="d"> Tengo tendencia a buscar todo lo que demuestra un progreso del
+                alumno, observó sus esfuerzos y les animó.<br>
+            </div>
+            <div class="pregresp">
+                <h4>27. Soportes pedagógicos: </h4><br>
+                <input type="radio" name="N27" value="a"> Estoy al tanto de las últimas novedades, me encanta la
+                innovación.<br>
+                <input type="radio" name="N27" value="b"> Utilizo diverso material con mis alumnos, les confió su manejo
+                y dejó desbordar un poco.<br>
+                <input type="radio" name="N27" value="c"> Tengo una serie de ejercicios bien probados, un material útil
+                y práctico que ha superado muchas pruebas; no estoy por la innovación a cualquier precio.<br>
+                <input type="radio" name="N27" value="d"> Aprecio la técnica de los instrumentos fiables, por eso soy
+                capaz de reconocer la importancia que ha adquirido la informática: se utilizarla.<br>
+            </div>
+            <div class="pregresp">
+                <h4>28. Reuniones entre mentores:</h4><br>
+                <input type="radio" name="N28" value="a"> Tengo tendencia a intervenir mucho para defender a mis
+                mentorizados; incluso intento que mis colegas tomen posiciones a su pesar.<br>
+                <input type="radio" name="N28" value="b"> Espero que me lo pidan e intervengo. A veces se ha recurrido a
+                mi para ciertas informaciones porque tengo mi programa y mis fichas en orden.<br>
+                <input type="radio" name="N28" value="c"> Cuando hay que intervenir en un caso difícil, presento hechos
+                y cifras. A veces pido aclaraciones a mis colegas para analizarlas detalladamente y tomar una decisión
+                objetiva.<br>
+                <input type="radio" name="N28" value="d"> Con frecuencia me distraigo, a veces me llaman al orden, pero
+                tengo buena intuición con mis mentorizados; a veces tienen en cuenta mi opinión.<br>
+            </div>
+            <div class="pregresp">
+                <h4>29. Actitud personal en los encuentros:</h4><br>
+                <input type="radio" name="N29" value="a"> Mi objetivo es lograr que los participantes tomen apuntes.
+                Escribo poco en la pizarra, Insisto en la asimilación de los conceptos vertidos.<br>
+                <input type="radio" name="N29" value="b"> A pesar de mis buenas intenciones, me cuesta trabajo
+                mantenerme dentro de los límites del objetivo que estoy tratando.Hago digresiones y a veces cometo
+                errores por distracción.<br>
+                <input type="radio" name="N29" value="c"> Mi plan está escrito en el pizarrón y mi material preparado
+                antes de que lleguen los participantes, no dejó nada al azar. Mi relación se desarrolla siguiendo las
+                normas establecidas con anterioridad, y mis mentorizados las conocen.<br>
+                <input type="radio" name="N29" value="d"> Para mi lo importante es establecer contacto con participantes
+                y trabajar en un ambiente relajado.<br>
+            </div>
+            <!--
+            <div class="pregresp">
+                <h4>30. Si pudieras elegir ¿qué preferirías ser? </h4><br><input type="radio" name="N30" value="a"> Un
+                gran médico<br><input type="radio" name="N30" value="b"> Un gran músico<br><input type="radio"
+                    name="N30" value="c"> Un gran pintor<br>
+            </div>
+            <div class="pregresp">
+                <h4>31. Cuando eliges tu ropa, ¿qué es lo más importante para ti?</h4><br><input type="radio" name="N31"
+                    value="a"> Que sea adecuada<br><input type="radio" name="N31" value="b"> Que luzca bien<br><input
+                    type="radio" name="N31" value="c"> Que sea cómoda<br>
+            </div>
+            <div class="pregresp">
+                <h4>32. ¿Qué es lo que más disfrutas de una habitación?</h4><br><input type="radio" name="N32"
+                    value="a"> Que sea silenciosa<br><input type="radio" name="N32" value="b"> Que sea
+                confortable<br><input type="radio" name="N32" value="c"> Que esté limpia y ordenada<br>
+            </div>
+            <div class="pregresp">
+                <h4>33. ¿Qué es más sexy para ti?</h4><br><input type="radio" name="N33" value="a"> Una iluminación
+                tenue<br><input type="radio" name="N33" value="b"> El perfume<br><input type="radio" name="N33"
+                    value="c"> Cierto tipo de música<br>
+            </div>
+            <div class="pregresp">
+                <h4>34. ¿A qué tipo de espectáculo preferirías asistir?</h4><br><input type="radio" name="N34"
+                    value="a"> A un concierto de música<br><input type="radio" name="N34" value="b"> A un espectáculo de
+                magia<br><input type="radio" name="N34" value="c"> A una muestra gastronómica<br>
+            </div>
+            <div class="pregresp">
+                <h4>35. ¿Qué te atrae más de una persona?</h4><br><input type="radio" name="N35" value="a"> Su trato y
+                forma de ser<br><input type="radio" name="N35" value="b"> Su aspecto físico<br><input type="radio"
+                    name="N35" value="c"> Su conversación<br>
+            </div>
+            <div class="pregresp">
+                <h4>36. Cuando vas de compras, ¿en dónde pasas mucho tiempo?</h4><br><input type="radio" name="N36"
+                    value="a"> En una librería<br><input type="radio" name="N36" value="b"> En una perfumería<br><input
+                    type="radio" name="N36" value="c"> En una tienda de discos<br>
+            </div>
+            <div class="pregresp">
+                <h4>37. ¿Cuáles tu idea de una noche romántica?</h4><br><input type="radio" name="N37" value="a"> A la
+                luz de las velas<br><input type="radio" name="N37" value="b"> Con música romántica<br><input
+                    type="radio" name="N37" value="c"> Bailando tranquilamente<br>
+            </div>
+            <div class="pregresp">
+                <h4>38. ¿Qué es lo que más disfrutas de viajar?</h4><br><input type="radio" name="N38" value="a">
+                Conocer personas y hacer nuevos amigos<br><input type="radio" name="N38" value="b"> Conocer lugares
+                nuevos<br><input type="radio" name="N38" value="c"> Aprender sobre otras costumbres<br>
+            </div>
+            <div class="pregresp">
+                <h4>39. Cuando estás en la ciudad, ¿qué es lo que más hechas de menos del campo?</h4><br><input
+                    type="radio" name="N39" value="a"> El aire limpio y refrescante<br><input type="radio" name="N39"
+                    value="b"> Los paisajes<br><input type="radio" name="N39" value="c"> La tranquilidad<br>
+            </div>
+            <div class="pregresp">
+                <h4>40. Si te ofrecieran uno de los siguientes empleos, ¿cuál elegirías?</h4><br><input type="radio"
+                    name="N40" value="a"> Director de una estación de radio<br><input type="radio" name="N40" value="b">
+                Director de un club deportivo<br><input type="radio" name="N40" value="c"> Director de una revista<br>
+            </div>
+            -->
+            <h4>
+                <center> <input type="reset" class="button" value="Borrar"> <br></center>
+            </h4> <br>
+        </form>
+    </body>
+</div>'
+
+
+
+
+
 const bandlerGrinder = '<div id="testContainer" class="card d-flex justify-content-center" > <head> <meta charset="UTF-8"> <title>Test de Bandler & Grinder</title> <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <link rel="stylesheet" href="myxblock.css"> </head> <body> <h1 id="rcorners1">Test de Bandler & Grinder Hidalgo hizo esto enredado</h1> <div class="titles">Instrucciones</div><br><p>Elije una opcion con la que más te identificas de cada una de las preguntas:</p><br><form> <div class="pregresp"> <h4>1. ¿Cuál de las siguientes actividades disfrutas más?</h4><br><input type="radio" name="N1" value="a"> Escuchar música<br><input type="radio" name="N1" value="b"> Ver películas<br><input type="radio" name="N1" value="c"> Bailar con buena música<br></div><div class="pregresp"> <h4>2. ¿Qué programa de televisión prefieres?</h4><br><input type="radio" name="N2" value="a"> Reportajes de descubrimientos y lugares<br><input type="radio" name="N2" value="b"> Cómico y de entretenimiento<br><input type="radio" name="N2" value="c"> Noticias del mundo<br></div><div class="pregresp"> <h4>3. Cuando conversas con otra persona, tú:</h4><br><input type="radio" name="N3" value="a"> La escuchas atentamente<br><input type="radio" name="N3" value="b"> La observas<br><input type="radio" name="N3" value="c"> Tiendes a tocarla<br></div><div class="pregresp"> <h4>4. Si pudieras adquirir uno de los siguientes articulos, ¿Cuál elegirías?</h4><br><input type="radio" name="N4" value="a"> Un jacuzzi<br><input type="radio" name="N4" value="b"> Un estéreo<br><input type="radio" name="N4" value="c"> Un televisor<br></div><div class="pregresp"> <h4>5. ¿Qué prefieres hacer un sábado por la tarde?</h4><br><input type="radio" name="N5" value="a"> Quedarte en casa<br><input type="radio" name="N5" value="b"> Ir a un concierto<br><input type="radio" name="N5" value="c"> Ir al cine<br></div><div class="pregresp"> <h4>6. ¿Qué tipo de exámenes se te facilitan más?</h4><br><input type="radio" name="N6" value="a"> Examen oral<br><input type="radio" name="N6" value="b"> Examen escrito<br><input type="radio" name="N6" value="c"> Examen de opción múltiple<br></div><div class="pregresp"> <h4>7. ¿Cómo te orientas más fácilmente?</h4><br><input type="radio" name="N7" value="a"> Mediante el uso de un mapa<br><input type="radio" name="N7" value="b"> Pidiendo indicaciones<br><input type="radio" name="N7" value="c"> A través de la intuición<br></div><div class="pregresp"> <h4>8. ¿En qué prefieres ocupar tu tiempo en un lugar de descanso?</h4><br><input type="radio" name="N8" value="a"> Pensar<br><input type="radio" name="N8" value="b"> Caminar por los alrededores<br><input type="radio" name="N8" value="c"> Descansar<br></div><div class="pregresp"> <h4>9. ¿Qué te halaga más?</h4><br><input type="radio" name="N9" value="a"> Que te digan que tienes buen aspecto<br><input type="radio" name="N9" value="b"> Que te digan que tienes un trato muy agradable<br><input type="radio" name="N9" value="c"> Que te digan que tienes una conversación interesante<br></div><div class="pregresp"> <h4>10. ¿Cuál de estos ambientes te atrae más?</h4><br><input type="radio" name="N10" value="a"> Uno en el que se sienta un clima agradable<br><input type="radio" name="N10" value="b"> Uno en el que se escuchen las olas del mar<br><input type="radio" name="N10" value="c"> Uno con una hermosa vista al océano<br></div><div class="pregresp"> <h4>11. ¿De qué manera se te facilita aprender algo?</h4><br><input type="radio" name="N11" value="a"> Repitiendo en voz alta<br><input type="radio" name="N11" value="b"> Escribiéndolo varias veces<br><input type="radio" name="N11" value="c"> Relacionándolo con algo divertid<br></div><div class="pregresp"> <h4>12. ¿A qué evento preferirías asistir?</h4><br><input type="radio" name="N12" value="a"> A una reunión social<br><input type="radio" name="N12" value="b"> A una exposición de arte<br><input type="radio" name="N12" value="c"> A una conferencia<br></div><div class="pregresp"> <h4>13. ¿De qué manera te formas una opinión de otras personas?</h4><br><input type="radio" name="N13" value="a"> Por la sinceridad en su voz<br><input type="radio" name="N13" value="b"> Por la forma de estrecharte la mano<br><input type="radio" name="N13" value="c"> Por su aspecto<br></div><div class="pregresp"> <h4>14. ¿Cómo te consideras?</h4><br><input type="radio" name="N14" value="a"> Atlético<br><input type="radio" name="N14" value="b"> Intelectual<br><input type="radio" name="N14" value="c"> Sociable<br></div><div class="pregresp"> <h4>15. ¿Qué tipo de películas te gustan más?</h4><br><input type="radio" name="N15" value="a"> Clásicas<br><input type="radio" name="N15" value="b"> De acción<br><input type="radio" name="N15" value="c"> De amor<br></div><div class="pregresp"> <h4>16. ¿Cómo prefieres mantenerte en contacto con otra persona?</h4><br><input type="radio" name="N16" value="a"> Por correo electrónico<br><input type="radio" name="N16" value="b"> Tomando un café juntos<br><input type="radio" name="N16" value="c"> Por teléfono<br></div><div class="pregresp"> <h4>17. ¿Cuál de las siguientes frases se identifican más contigo?</h4><br><input type="radio" name="N17" value="a"> Me gusta que mi coche se sienta bien al conducirlo<br><input type="radio" name="N17" value="b"> Percibo hasta el mas ligero ruido que hace mi coche<br><input type="radio" name="N17" value="c"> Es importante que mi coche esté limpio por fuera y por dentro<br></div><div class="pregresp"> <h4>18. ¿Cómo prefieres pasar el tiempo con tu pareja?</h4><br><input type="radio" name="N18" value="a"> Conversando<br><input type="radio" name="N18" value="b"> Acariciándose<br><input type="radio" name="N18" value="c"> Mirando algo juntos<br></div><div class="pregresp"> <h4>19. Si no encuentras las llaves en una bolsa</h4><br><input type="radio" name="N19" value="a"> La buscas mirando<br><input type="radio" name="N19" value="b"> Sacudes la bolsa para oír el ruido<br><input type="radio" name="N19" value="c"> Buscas al tacto<br></div><div class="pregresp"> <h4>20. Cuando tratas de recordar algo, ¿cómo lo haces?</h4><br><input type="radio" name="N20" value="a"> A través de imágenes<br><input type="radio" name="N20" value="b"> A través de emociones<br><input type="radio" name="N20" value="c"> A través de sonidos<br></div><div class="pregresp"> <h4>21. Si tuvieras dinero, ¿qué harías? </h4><br><input type="radio" name="N21" value="a"> Comprar una casa<br><input type="radio" name="N21" value="b"> Viajar y conocer el mundo<br><input type="radio" name="N21" value="c"> Adquirir un estudio de grabación<br></div><div class="pregresp"> <h4>22. ¿Con qué frase te identificas más?</h4><br><input type="radio" name="N22" value="a"> Reconozco a las personas por su voz<br><input type="radio" name="N22" value="b"> No recuerdo el aspecto de la gente<br><input type="radio" name="N22" value="c"> Recuerdo el aspecto de alguien, pero no su nombre<br></div><div class="pregresp"> <h4>23. Si tuvieras que quedarte en una isla desierta, ¿qué preferirías llevar contigo?</h4><br><input type="radio" name="N23" value="a"> Algunos buenos libros<br><input type="radio" name="N23" value="b"> Un radio portátil de alta frecuencia<br><input type="radio" name="N23" value="c"> Golosinas y comida enlatada<br></div><div class="pregresp"> <h4>24. ¿Cuál de los siguientes entretenimientos prefieres?</h4><br><input type="radio" name="N24" value="a"> Tocar un instrumento musical<br><input type="radio" name="N24" value="b"> Sacar fotografías<br><input type="radio" name="N24" value="c"> Actividades manuales<br></div><div class="pregresp"> <h4>25. ¿Cómo es tu forma de vestir?</h4><br><input type="radio" name="N25" value="a"> Impecable<br><input type="radio" name="N25" value="b"> Informal<br><input type="radio" name="N25" value="c"> Muy informal<br></div><div class="pregresp"> <h4>26. ¿Qué es lo que más te gusta de una fogata nocturna?</h4><br><input type="radio" name="N26" value="a"> El calor del fuego y los bombones asados<br><input type="radio" name="N26" value="b"> El sonido del fuego quemando la leña<br><input type="radio" name="N26" value="c"> Mirar el fuego y las estrellas<br></div><div class="pregresp"> <h4>27. ¿Cómo se te facilita entender algo?</h4><br><input type="radio" name="N27" value="a"> Cuando te lo explican verbalmente<br><input type="radio" name="N27" value="b"> Cuando utilizan medios visuales<br><input type="radio" name="N27" value="c"> Cuando se realiza a través de alguna actividad<br></div><div class="pregresp"> <h4>28. ¿Por qué te distingues?</h4><br><input type="radio" name="N28" value="a"> Por tener una gran intuición<br><input type="radio" name="N28" value="b"> Por ser un buen conversador<br><input type="radio" name="N28" value="c"> Por ser un buen observador<br></div><div class="pregresp"> <h4>29. ¿Qué es lo que más disfrutas de un amanecer?</h4><br><input type="radio" name="N29" value="a"> La emoción de vivir un nuevo día<br><input type="radio" name="N29" value="b"> Las tonalidades del cielo<br><input type="radio" name="N29" value="c"> El canto de las aves<br></div><div class="pregresp"> <h4>30. Si pudieras elegir ¿qué preferirías ser? </h4><br><input type="radio" name="N30" value="a"> Un gran médico<br><input type="radio" name="N30" value="b"> Un gran músico<br><input type="radio" name="N30" value="c"> Un gran pintor<br></div><div class="pregresp"> <h4>31. Cuando eliges tu ropa, ¿qué es lo más importante para ti?</h4><br><input type="radio" name="N31" value="a"> Que sea adecuada<br><input type="radio" name="N31" value="b"> Que luzca bien<br><input type="radio" name="N31" value="c"> Que sea cómoda<br></div><div class="pregresp"> <h4>32. ¿Qué es lo que más disfrutas de una habitación?</h4><br><input type="radio" name="N32" value="a"> Que sea silenciosa<br><input type="radio" name="N32" value="b"> Que sea confortable<br><input type="radio" name="N32" value="c"> Que esté limpia y ordenada<br></div><div class="pregresp"> <h4>33. ¿Qué es más sexy para ti?</h4><br><input type="radio" name="N33" value="a"> Una iluminación tenue<br><input type="radio" name="N33" value="b"> El perfume<br><input type="radio" name="N33" value="c"> Cierto tipo de música<br></div><div class="pregresp"> <h4>34. ¿A qué tipo de espectáculo preferirías asistir?</h4><br><input type="radio" name="N34" value="a"> A un concierto de música<br><input type="radio" name="N34" value="b"> A un espectáculo de magia<br><input type="radio" name="N34" value="c"> A una muestra gastronómica<br></div><div class="pregresp"> <h4>35. ¿Qué te atrae más de una persona?</h4><br><input type="radio" name="N35" value="a"> Su trato y forma de ser<br><input type="radio" name="N35" value="b"> Su aspecto físico<br><input type="radio" name="N35" value="c"> Su conversación<br></div><div class="pregresp"> <h4>36. Cuando vas de compras, ¿en dónde pasas mucho tiempo?</h4><br><input type="radio" name="N36" value="a"> En una librería<br><input type="radio" name="N36" value="b"> En una perfumería<br><input type="radio" name="N36" value="c"> En una tienda de discos<br></div><div class="pregresp"> <h4>37. ¿Cuáles tu idea de una noche romántica?</h4><br><input type="radio" name="N37" value="a"> A la luz de las velas<br><input type="radio" name="N37" value="b"> Con música romántica<br><input type="radio" name="N37" value="c"> Bailando tranquilamente<br></div><div class="pregresp"> <h4>38. ¿Qué es lo que más disfrutas de viajar?</h4><br><input type="radio" name="N38" value="a"> Conocer personas y hacer nuevos amigos<br><input type="radio" name="N38" value="b"> Conocer lugares nuevos<br><input type="radio" name="N38" value="c"> Aprender sobre otras costumbres<br></div><div class="pregresp"> <h4>39. Cuando estás en la ciudad, ¿qué es lo que más hechas de menos del campo?</h4><br><input type="radio" name="N39" value="a"> El aire limpio y refrescante<br><input type="radio" name="N39" value="b"> Los paisajes<br><input type="radio" name="N39" value="c"> La tranquilidad<br></div><div class="pregresp"> <h4>40. Si te ofrecieran uno de los siguientes empleos, ¿cuál elegirías?</h4><br><input type="radio" name="N40" value="a"> Director de una estación de radio<br><input type="radio" name="N40" value="b"> Director de un club deportivo<br><input type="radio" name="N40" value="c"> Director de una revista<br></div><h4><center> <input type="reset" class="button" value="Borrar"> <br></center> </h4> <br></form> </body> </div>'
 
 const kolb = '<div id="testContainer" class="card d-flex justify-content-center" > <div class="container-fluid "> <div class="bg-primary  d-flex justify-content-center">  <h1 class="h1 text-white"> TEST DE KOLB</h1></div><p class="p-3 card">Lee atentamente las preguntas y arrastra las respuestas hasta ordenarlas según creas que te describen mejor, poniendo en primer lugar la respuesta más acertada y en último lugar la menos acertada. </p><table> <tr> <blockquote class="bloque"> <b>Cuando Aprendo:</b> </blockquote> </tr><ul id="sortable" class="lista"> <li class="ui-state-default alert alert-primary w-50 " ><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Prefiero valerme de mis sensaciones y sentimientos</li><li class="ui-state-default alert alert-primary w-50 ""><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Prefiero mirar y atender</li><li class="ui-state-default alert alert-primary w-50  ""><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Prefiero pensar en las ideas </li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Prefiero hacer cosas</li></ul> <tr> <blockquote class="bloque"> <b>Aprendo mejor cuando:</b> </blockquote> </tr><ul id="sortable1" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Confío en mis corazonadas y sentimientos </li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Atiendo y observo cuidadosamente</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Confío en mis pensamientos lógicos</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Trabajo duramente para que las cosas queden realizadas </li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando estoy aprendiendo:</b> </blockquote> </tr><ul id="sortable2" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Tengo sentimientos y reacciones fuertes</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Soy reservado y tranquilo</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Busco razonar sobre las cosas que están sucediendo</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Me siento responsable de las cosas</li></ul> <tr> <blockquote class="bloque"> <b class="b">Aprendo a través de:</b> </blockquote> </tr><ul id="sortable3" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Sentimientos</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Observaciones</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Razonamientos</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Acciones</li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando aprendo:</b> </blockquote> </tr><ul id="sortable4" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Estoy abierto a nuevas experiencias</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Tomo en cuenta todos los aspectos relacionados </li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Prefiero analizar las cosas dividiéndolas en sus partes componentes</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Prefiero hacer las cosas directamente </li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando estoy aprendiendo:</b> </blockquote> </tr><ul id="sortable5" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Soy una persona intuitiva</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Soy una persona observadora</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Soy una persona lógica</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Soy una persona activa </li></ul> <tr> <blockquote class="bloque"> <b class="b">Aprendo mejor a través de:</b> </blockquote> </tr><ul id="sortable6" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Las relaciones con mis compañeros</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>La observación</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Teorías racionales</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>La práctica de los temas tratados</li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando aprendo:</b> </blockquote> </tr><ul id="sortable7" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Me siento involucrado en los temas tratados</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Me tomo mi tiempo antes de actuar</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Prefiero las teorías y las ideas</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Prefiero ver los resultados a través de mi propio trabajo</li></ul> <tr> <blockquote class="bloque"> <b class="b">Aprendo mejor cuando:</b> </blockquote> </tr><ul id="sortable8" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Me baso en mis intuiciones y sentimientos</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Me baso en observaciones personales</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Tomo en cuenta mis propias ideas sobre el tema</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Pruebo personalmente la tarea </li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando estoy aprendiendo:</b> </blockquote> </tr><ul id="sortable9" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Soy una persona abierta</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Soy una persona reservada</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Soy una persona racional</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Soy una persona responsable </li></ul> <tr> <blockquote class="bloque"> <b class="b">Cuando aprendo:</b> </blockquote> </tr><ul id="sortable10" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Me involucro</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Prefiero observar</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Prefiero evaluar las cosas</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Prefiero asumir una actitud activa </li></ul> <tr> <blockquote class="bloque"> <b class="b">Aprendo mejor cuando:</b> </blockquote> </tr><ul id="sortable11" class="lista"> <li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnA"></span>Soy receptivo y de mente abierta</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnB"></span>Soy cuidadoso</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnC"></span>Analizo las ideas</li><li class="ui-state-default alert alert-primary w-50 "><span class="ui-icon ui-icon-arrowthick-2-n-s columnD"></span>Soy práctico</li></ul></table> </div></div>';
