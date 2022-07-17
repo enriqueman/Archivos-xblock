@@ -9,6 +9,7 @@ function StudioAdaptiveTestXBlock(runtime, element) {
         if(index==1) alert("Dominancia Cerebral seleccionado con éxito");
         if(index==2) alert("Inteligencias Multiples seleccionado con éxito");
         if(index==3) alert("Honey-Alonso seleccionado con éxito");
+        
         if(index==4) Swal.fire(
             'Éxito!',
             'Test Felder Silverman seleccionado!',
@@ -19,6 +20,12 @@ function StudioAdaptiveTestXBlock(runtime, element) {
         if(index==5) Swal.fire(
             'Éxito!',
             'Test Bandler & Grinder seleccionado!',
+            'success'
+        ).then( () => {location.href="http://localhost:8000/scenario/adaptive_test.0/studio_analytics/";})
+        
+        if(index==7) Swal.fire(
+            'Éxito!',
+            'Herrmann V2 Seleccionado con éxito',
             'success'
         ).then( () => {location.href="http://localhost:8000/scenario/adaptive_test.0/studio_analytics/";})
     }
