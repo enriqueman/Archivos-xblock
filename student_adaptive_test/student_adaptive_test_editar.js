@@ -29,19 +29,25 @@ function StudentAdaptiveTestXBlock(runtime, element) {
                     //if (data.test == 6){
                     arraydatos = data.test_result.result.split(" ");
                     console.log(arraydatos);
-                    p_visual = 0;
-                    p_auditivo = 0;
-                    p_kines = 0;
+                    // p_visual = 0;
+                    // p_auditivo = 0;
+                    // p_kines = 0;
+			p_logicoMat =0;
+			p_orgAnali=0;
+			p_emocioSens=0;
+			p_intuImag=0;
                     
 
                     for (var i = 0; i < arraydatos.length; i++) {
                         if (arraydatos[i].substr(0, 11) == "<br>Visual:") {
-                            p_visual = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
+                            p_logicoMat = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
                         } else if (arraydatos[i].substr(0, 13) == "<br>Auditivo:") {
-                            p_auditivo = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
+                            p_orgAnali = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
                         }else if (arraydatos[i].substr(0, 16) == "<br>Kinestésico:") {
-                            p_kines = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
-                        }
+                            p_emocioSens = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
+                        }else if (arraydatos[i].substr(0, 16) == "<br>Kinestésico:"){
+			    p_intuImag = arraydatos[i+1].substring(0, arraydatos[i+1].length - 1);
+			}
                     }
 
                 var Chartgrafico = {
@@ -168,6 +174,7 @@ function StudentAdaptiveTestXBlock(runtime, element) {
                     if (data.test == 4) loadHoneyAlonso();
                     if (data.test == 5) loadFelderSilverman();
                     if (data.test == 6) loadBandlerGrinder();
+		    if (data.test == 7) loadHerrmannV2();
 
                     $("#sortable, #sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6, #sortable7, #sortable8, #sortable9, #sortable10, #sortable11").sortable();
                     $("#sortable, #sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6, #sortable7, #sortable8, #sortable9, #sortable10, #sortable11").disableSelection();
@@ -204,6 +211,11 @@ function StudentAdaptiveTestXBlock(runtime, element) {
                 result = getBandlerGrinder();
                 test_name = "Bandler & Grinder"
             }
+	    if (test == 7){
+	    	result = getHerrmannV2();
+		test_name = "Herrmann V2"
+	    }
+		
 
             $.ajax({
                 type: "POST",
@@ -306,13 +318,90 @@ function StudentAdaptiveTestXBlock(runtime, element) {
         html = bandlerGrinder;
         $("#test").html(html);
     }
+    function loadHerrmannV2(){
+    	html = Herrmann_v2;
+	$("#test").html(html);
+    }
 
     function loadAlreadyPresented() {
         html = '<p>El test no está disponible.</p>';
         $("#test").html(html);
         $("#submit-test").attr("disabled", true);
     }
+	
+	
+    /*Test Herrmann V2 2022-1*/
+	 /// Herrmann V2 2022-1
+    function getHerrmannV2(){
+        try{
+            responseTestH = {}
+            const logicMath = ['a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a'];
+            const orgAnali = ['b','b','b','b', 'b','b','b','b', 'b','b','b','b', 'b','b','b','b', 'b','b','b','b', 'b','b','b','b', 'b','b','b','b', 'b'];
+            const emocioSens = ['c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c'];
+            const intuImag = ['d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d'];
+            let strQuadrantH = '';
 
+            const logicMathResult1 = 0;
+            const orgAnaliResult2 =0;
+            const emocioSensResult3 = 0;
+            const intuImagResult4 = 0;
+
+            console.log(logicMathResult.length);
+
+            for (let i=1; i<30; i++){
+                let value = document.querySelector('input[name="N'+ i + '"]:checked').value || 'hola';
+                if(value == logicMath[i-1]){
+                    logicMathResult1 = logicMathResult1 + 1;
+                    //logicMathResult1.push(1);
+                } 
+                if(value == orgAnali[i-1]){
+                    orgAnaliResult2 = orgAnaliResult2 + 2;
+                    //orgAnaliResult2.push(2);
+                } 
+                if(value == emocioSens[i-1]){
+                    emocioSensResult3 = emocioSensResult3 + 3;
+                    //emocioSensResult3.push(3);
+                }
+                if(value == intuImag[i-1]){
+                    intuImagResult4 = intuImagResult4 +4;
+                    //intuImagResult4.push(4);
+                } 
+            }
+            const suma = logicMathResult1 + orgAnaliResult2 + emocioSens + intuImagResult4;
+            console.log(suma);
+
+            ///DETERMINAR TIPO DE CEREBRO -----> SI FUNCIONA CAMBIAR
+            if(suma > 0 && suma <=29){
+                strQuadrantH = 'Logico Matemático <br>';
+            } 
+            if(suma > 29 && suma <= 58){
+                strQuadrantH = 'Organizado Analista <br>';
+            } 
+            if(suma > 58 && suma <= 87){
+                strQuadrantH = 'Emocional Sensitivo <br>';
+            }
+            if(suma > 87 && suma <= 116){
+                strQuadrantH = 'Intuitivo Imaginativo <br>';
+            }
+            /*strQuadrant = strQuadrant + `Logico Matematico: ${logicMathResult1*100/29}% <br>`
+            strQuadrant = strQuadrant + `Organizado Analista: ${orgAnaliResult2*100/29}% <br>`
+            strQuadrant = strQuadrant + `Emocional Sensitivo: ${emocioSensResult3*100/29}% <br>`
+            strQuadrant = strQuadrant + `Intuitivo Imaginativo: ${intuImagResult4*100/29}% <br>`*/
+            responseTestH = {'Resultado':strQuadrantH};
+            return responseTestH;
+        }
+        catch(e){
+            console.log(e);
+            Swal.fire({
+                icon: 'error',
+                title: 'Lo sentimos',
+                text: 'Nos has llenado el test en su totalidad'
+              })
+        }
+    }
+
+    //FIN TEST HERRMANN V2 2022-1
+	
     /* 
      * HERRMANN TEST. Documentation about the answers was provided but there is no input-ouput
      * relation, rather than a polar plane with A to D quadrants.
@@ -366,7 +455,7 @@ function StudentAdaptiveTestXBlock(runtime, element) {
 
         return { result: strQuadrant, result_details: sectionsScore };
     }
-
+	
 
     function getTestInteligencias() {
         const sections = ["A", "B", "C", "D", "E", "F", "G"];
