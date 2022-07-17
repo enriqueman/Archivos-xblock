@@ -15,7 +15,7 @@ function StudioAnalyticsXBlock(runtime, element) {
           //add a header to the web page
           var header = "";
           header =
-            '<div class="bg-primary  d-flex justify-content-center"> <h2 class="h1 text-white">Resultados Tests</h2> </div>';
+            '<div class="bg-primary  d-flex justify-content-center"> <h2 class="h1 text-white">Resultados Tests Herrmann V2</h2> </div>';
           $("#analytics-header").append(header);
           //show database results (student id, date, test name and test result) in an HTML table
           data.map((student) => {
