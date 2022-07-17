@@ -474,8 +474,7 @@ function StudentAdaptiveTestXBlock(runtime, element) {
             responseTestBG = {}
             const visual = ['b', 'a', 'b', 'c', 'c', 'b', 'a', 'b', 'a', 'c', 'b', 'b', 'c', 'a', 'b', 'a', 'c', 'c', 'a', 'a', 'b', 'c', 'a', 'b', 'a', 'c', 'b', 'c', 'b', 'c', 'b', 'c', 'a', 'b', 'b', 'a', 'a', 'b', 'b', 'c'];
             const auditivo = ['a', 'c', 'a', 'b', 'b', 'a', 'b', 'a', 'c', 'b', 'a', 'c', 'a', 'b', 'a', 'c', 'b', 'a', 'b', 'c', 'c', 'a', 'b', 'a', 'b', 'b', 'a', 'b', 'c', 'b', 'a', 'a', 'c', 'a', 'c', 'c', 'b', 'c', 'c', 'a'];
-            const cines   = ['c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c'];
-            const intuitivo=['d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d'];
+            const cines = ['c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c'];
             let strQuadrant = '';
 
             const visualResult = [];
