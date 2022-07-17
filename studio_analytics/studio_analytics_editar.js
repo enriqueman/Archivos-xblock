@@ -24,8 +24,9 @@ function StudioAnalyticsXBlock(runtime, element) {
                       if (student.test == 2) test_name = "Hermann"
                       if (student.test == 3) test_name = "Inteligencias Multiples"
                       if (student.test == 4) test_name = "Honey-Alonso"
-                      if (student.test == 5) test_name = "Felder Silverman"*/
-            if (student.test == 6) test_name = "Bandler & Grinder";
+                      if (student.test == 5) test_name = "Felder Silverman"
+                      if (student.test == 6) test_name = "Bandler & Grinder"*/
+            if (student.test == 7) test_name = "Herrmann_v2";
   
             html += "<tr>";
             html += "<td>" + student.user_id + "</td>";
