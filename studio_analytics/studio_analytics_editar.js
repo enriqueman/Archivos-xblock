@@ -143,5 +143,3 @@ function StudioAnalyticsXBlock(runtime, element) {
     }
   }
   
-  
-  
